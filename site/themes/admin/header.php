@@ -134,7 +134,7 @@
                             <?php
                         } else {
                             ?>
-                            <a href="<?php echo url('') ?>" class="navbar-brand">BRAC CIFF</a>
+                            <a href="<?php echo url('') ?>" class="navbar-brand">BRAC Reintegration</a>
                             <div class="company_logo"></div>
                             <?php
                         }
@@ -258,7 +258,7 @@
                             <div class="text-bg"><span class="text-slim">Welcome,</span> <span class="text-semibold" style="    display: block;
                                                                                                text-overflow: ellipsis;
                                                                                                white-space: nowrap;
-                                                                                               overflow: hidden;">BRAC CIFF</span></div>
+                                                                                               overflow: hidden;">BRAC Reintegration</span></div>
                         </div>
                     </div>
                     <?php echo getProjectSettings('features,backend_left_menu') ? $adminmenu->get_admin_menu(null) : '<ul class="navigation"></ul>' ?>

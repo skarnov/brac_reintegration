@@ -34,7 +34,7 @@ $PAGE_NAME = $_config['admin_page_heading'] ? $_config['admin_page_heading'] : '
 
 include('outerHeader.php')
 ?>
- <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <form action="" style="" id="signin-form_id" class="panel login_form" method="post">
     <div class="loginFormBG"></div>
@@ -48,9 +48,6 @@ include('outerHeader.php')
         <input type="password" name="user_password" id="user_password" class="form-control input-lg" placeholder="Password">
         <!-- href="<?php echo url('admin/forgot_password'); ?>" class="forgot">Forgot Password?</a-->
     </div>
-     <div class="g-recaptcha" data-sitekey="6LcdK6ofAAAAAKKELFHTQOoMkhZh2idqICjoyW28"></div>
-      <br/>
-
     <div class="form-actions">
         <input type="submit" value="Sign In" name="login_request" class="btn btn-primary btn-block btn-lg">
     </div>
