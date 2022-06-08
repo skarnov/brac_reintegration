@@ -335,7 +335,7 @@ class dev_knowledge_management {
 
             if ($_FILES['document_file']['name']) {
                 $supported_ext = array('jpg', 'png', 'pdf', 'docx');
-                $max_filesize = 512000;
+                $max_filesize = 5120000;
                 $target_dir = _path('uploads', 'absolute') . "/";
                 if (!file_exists($target_dir))
                     mkdir($target_dir);
@@ -365,17 +365,17 @@ class dev_knowledge_management {
                 $knowledge_data['update_date'] = date('Y-m-d');
                 $knowledge_data['update_time'] = date('H:i:s');
                 $knowledge_data['updated_by'] = $_config['user']['pk_user_id'];
-                $ret['knowledge_update'] = $devdb->insert_update('dev_knowledge', $knowledge_data, " pk_knowledge_id = '" . $is_update . "'");
+                $ret = $devdb->insert_update('dev_knowledge', $knowledge_data, " pk_knowledge_id = '" . $is_update . "'");
             } else {
                 $knowledge_data['create_date'] = date('Y-m-d');
                 $knowledge_data['create_time'] = date('H:i:s');
                 $knowledge_data['created_by'] = $_config['user']['pk_user_id'];
-                $ret['knowledge_insert'] = $devdb->insert_update('dev_knowledge', $knowledge_data);
+                $ret = $devdb->insert_update('dev_knowledge', $knowledge_data);
             }
 
             if ($params['form_data']['new_tag']) {
                 $data = array(
-                    'fk_content_id' => $ret['knowledge_insert']['success'] ? $ret['knowledge_insert']['success'] : $is_update,
+                    'fk_content_id' => $ret['success'] ? $ret['success'] : $is_update,
                     'lookup_group' => 'success_story',
                     'lookup_value' => $params['form_data']['new_tag'],
                 );
@@ -428,7 +428,7 @@ class dev_knowledge_management {
 
             if ($_FILES['document_file']['name']) {
                 $supported_ext = array('jpg', 'png', 'pdf', 'docx');
-                $max_filesize = 512000;
+                $max_filesize = 5120000;
                 $target_dir = _path('uploads', 'absolute') . "/";
                 if (!file_exists($target_dir))
                     mkdir($target_dir);
@@ -458,17 +458,17 @@ class dev_knowledge_management {
                 $knowledge_data['update_date'] = date('Y-m-d');
                 $knowledge_data['update_time'] = date('H:i:s');
                 $knowledge_data['updated_by'] = $_config['user']['pk_user_id'];
-                $ret['knowledge_update'] = $devdb->insert_update('dev_knowledge', $knowledge_data, " pk_knowledge_id = '" . $is_update . "'");
+                $ret = $devdb->insert_update('dev_knowledge', $knowledge_data, " pk_knowledge_id = '" . $is_update . "'");
             } else {
                 $knowledge_data['create_date'] = date('Y-m-d');
                 $knowledge_data['create_time'] = date('H:i:s');
                 $knowledge_data['created_by'] = $_config['user']['pk_user_id'];
-                $ret['knowledge_insert'] = $devdb->insert_update('dev_knowledge', $knowledge_data);
+                $ret = $devdb->insert_update('dev_knowledge', $knowledge_data);
             }
 
             if ($params['form_data']['new_tag']) {
                 $data = array(
-                    'fk_content_id' => $ret['knowledge_insert']['success'] ? $ret['knowledge_insert']['success'] : $is_update,
+                    'fk_content_id' => $ret['success'] ? $ret['success'] : $is_update,
                     'lookup_group' => 'success_study_report',
                     'lookup_value' => $params['form_data']['new_tag'],
                 );
@@ -521,7 +521,7 @@ class dev_knowledge_management {
 
             if ($_FILES['document_file']['name']) {
                 $supported_ext = array('jpg', 'png', 'pdf', 'docx');
-                $max_filesize = 512000;
+                $max_filesize = 5120000;
                 $target_dir = _path('uploads', 'absolute') . "/";
                 if (!file_exists($target_dir))
                     mkdir($target_dir);
@@ -551,17 +551,17 @@ class dev_knowledge_management {
                 $knowledge_data['update_date'] = date('Y-m-d');
                 $knowledge_data['update_time'] = date('H:i:s');
                 $knowledge_data['updated_by'] = $_config['user']['pk_user_id'];
-                $ret['knowledge_update'] = $devdb->insert_update('dev_knowledge', $knowledge_data, " pk_knowledge_id = '" . $is_update . "'");
+                $ret = $devdb->insert_update('dev_knowledge', $knowledge_data, " pk_knowledge_id = '" . $is_update . "'");
             } else {
                 $knowledge_data['create_date'] = date('Y-m-d');
                 $knowledge_data['create_time'] = date('H:i:s');
                 $knowledge_data['created_by'] = $_config['user']['pk_user_id'];
-                $ret['knowledge_insert'] = $devdb->insert_update('dev_knowledge', $knowledge_data);
+                $ret = $devdb->insert_update('dev_knowledge', $knowledge_data);
             }
 
             if ($params['form_data']['new_tag']) {
                 $data = array(
-                    'fk_content_id' => $ret['knowledge_insert']['success'] ? $ret['knowledge_insert']['success'] : $is_update,
+                    'fk_content_id' => $ret['success'] ? $ret['success'] : $is_update,
                     'lookup_group' => 'success_research_report',
                     'lookup_value' => $params['form_data']['new_tag'],
                 );
@@ -614,7 +614,7 @@ class dev_knowledge_management {
 
             if ($_FILES['document_file']['name']) {
                 $supported_ext = array('jpg', 'png', 'pdf', 'docx');
-                $max_filesize = 512000;
+                $max_filesize = 5120000;
                 $target_dir = _path('uploads', 'absolute') . "/";
                 if (!file_exists($target_dir))
                     mkdir($target_dir);
@@ -644,17 +644,17 @@ class dev_knowledge_management {
                 $knowledge_data['update_date'] = date('Y-m-d');
                 $knowledge_data['update_time'] = date('H:i:s');
                 $knowledge_data['updated_by'] = $_config['user']['pk_user_id'];
-                $ret['knowledge_update'] = $devdb->insert_update('dev_knowledge', $knowledge_data, " pk_knowledge_id = '" . $is_update . "'");
+                $ret = $devdb->insert_update('dev_knowledge', $knowledge_data, " pk_knowledge_id = '" . $is_update . "'");
             } else {
                 $knowledge_data['create_date'] = date('Y-m-d');
                 $knowledge_data['create_time'] = date('H:i:s');
                 $knowledge_data['created_by'] = $_config['user']['pk_user_id'];
-                $ret['knowledge_insert'] = $devdb->insert_update('dev_knowledge', $knowledge_data);
+                $ret = $devdb->insert_update('dev_knowledge', $knowledge_data);
             }
 
             if ($params['form_data']['new_tag']) {
                 $data = array(
-                    'fk_content_id' => $ret['knowledge_insert']['success'] ? $ret['knowledge_insert']['success'] : $is_update,
+                    'fk_content_id' => $ret['success'] ? $ret['success'] : $is_update,
                     'lookup_group' => 'success_assessment_report',
                     'lookup_value' => $params['form_data']['new_tag'],
                 );
@@ -707,7 +707,7 @@ class dev_knowledge_management {
 
             if ($_FILES['document_file']['name']) {
                 $supported_ext = array('jpg', 'png', 'pdf', 'docx');
-                $max_filesize = 512000;
+                $max_filesize = 5120000;
                 $target_dir = _path('uploads', 'absolute') . "/";
                 if (!file_exists($target_dir))
                     mkdir($target_dir);
@@ -737,17 +737,17 @@ class dev_knowledge_management {
                 $knowledge_data['update_date'] = date('Y-m-d');
                 $knowledge_data['update_time'] = date('H:i:s');
                 $knowledge_data['updated_by'] = $_config['user']['pk_user_id'];
-                $ret['knowledge_update'] = $devdb->insert_update('dev_knowledge', $knowledge_data, " pk_knowledge_id = '" . $is_update . "'");
+                $ret = $devdb->insert_update('dev_knowledge', $knowledge_data, " pk_knowledge_id = '" . $is_update . "'");
             } else {
                 $knowledge_data['create_date'] = date('Y-m-d');
                 $knowledge_data['create_time'] = date('H:i:s');
                 $knowledge_data['created_by'] = $_config['user']['pk_user_id'];
-                $ret['knowledge_insert'] = $devdb->insert_update('dev_knowledge', $knowledge_data);
+                $ret = $devdb->insert_update('dev_knowledge', $knowledge_data);
             }
 
             if ($params['form_data']['new_tag']) {
                 $data = array(
-                    'fk_content_id' => $ret['knowledge_insert']['success'] ? $ret['knowledge_insert']['success'] : $is_update,
+                    'fk_content_id' => $ret['success'] ? $ret['success'] : $is_update,
                     'lookup_group' => 'success_organogram',
                     'lookup_value' => $params['form_data']['new_tag'],
                 );
@@ -800,7 +800,7 @@ class dev_knowledge_management {
 
             if ($_FILES['document_file']['name']) {
                 $supported_ext = array('jpg', 'png', 'pdf', 'docx');
-                $max_filesize = 512000;
+                $max_filesize = 5120000;
                 $target_dir = _path('uploads', 'absolute') . "/";
                 if (!file_exists($target_dir))
                     mkdir($target_dir);
@@ -830,17 +830,17 @@ class dev_knowledge_management {
                 $knowledge_data['update_date'] = date('Y-m-d');
                 $knowledge_data['update_time'] = date('H:i:s');
                 $knowledge_data['updated_by'] = $_config['user']['pk_user_id'];
-                $ret['knowledge_update'] = $devdb->insert_update('dev_knowledge', $knowledge_data, " pk_knowledge_id = '" . $is_update . "'");
+                $ret = $devdb->insert_update('dev_knowledge', $knowledge_data, " pk_knowledge_id = '" . $is_update . "'");
             } else {
                 $knowledge_data['create_date'] = date('Y-m-d');
                 $knowledge_data['create_time'] = date('H:i:s');
                 $knowledge_data['created_by'] = $_config['user']['pk_user_id'];
-                $ret['knowledge_insert'] = $devdb->insert_update('dev_knowledge', $knowledge_data);
+                $ret = $devdb->insert_update('dev_knowledge', $knowledge_data);
             }
 
             if ($params['form_data']['new_tag']) {
                 $data = array(
-                    'fk_content_id' => $ret['knowledge_insert']['success'] ? $ret['knowledge_insert']['success'] : $is_update,
+                    'fk_content_id' => $ret['success'] ? $ret['success'] : $is_update,
                     'lookup_group' => 'meeting_minute',
                     'lookup_value' => $params['form_data']['new_tag'],
                 );
@@ -893,7 +893,7 @@ class dev_knowledge_management {
 
             if ($_FILES['document_file']['name']) {
                 $supported_ext = array('jpg', 'png', 'pdf', 'docx');
-                $max_filesize = 512000;
+                $max_filesize = 5120000;
                 $target_dir = _path('uploads', 'absolute') . "/";
                 if (!file_exists($target_dir))
                     mkdir($target_dir);
@@ -923,17 +923,17 @@ class dev_knowledge_management {
                 $knowledge_data['update_date'] = date('Y-m-d');
                 $knowledge_data['update_time'] = date('H:i:s');
                 $knowledge_data['updated_by'] = $_config['user']['pk_user_id'];
-                $ret['knowledge_update'] = $devdb->insert_update('dev_knowledge', $knowledge_data, " pk_knowledge_id = '" . $is_update . "'");
+                $ret = $devdb->insert_update('dev_knowledge', $knowledge_data, " pk_knowledge_id = '" . $is_update . "'");
             } else {
                 $knowledge_data['create_date'] = date('Y-m-d');
                 $knowledge_data['create_time'] = date('H:i:s');
                 $knowledge_data['created_by'] = $_config['user']['pk_user_id'];
-                $ret['knowledge_insert'] = $devdb->insert_update('dev_knowledge', $knowledge_data);
+                $ret = $devdb->insert_update('dev_knowledge', $knowledge_data);
             }
 
             if ($params['form_data']['new_tag']) {
                 $data = array(
-                    'fk_content_id' => $ret['knowledge_insert']['success'] ? $ret['knowledge_insert']['success'] : $is_update,
+                    'fk_content_id' => $ret['success'] ? $ret['success'] : $is_update,
                     'lookup_group' => 'project_document',
                     'lookup_value' => $params['form_data']['new_tag'],
                 );

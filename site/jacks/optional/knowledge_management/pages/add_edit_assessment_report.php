@@ -33,7 +33,7 @@ if ($_POST) {
 
     $ret = $this->add_edit_assessment_report($data);
 
-    if ($ret) {
+    if ($ret['success']) {
         $msg = "Assessment Report has been " . ($edit ? 'updated.' : 'saved.');
         add_notification($msg);
         $activityType = $edit ? 'update' : 'create';

@@ -33,7 +33,7 @@ if ($_POST) {
 
     $ret = $this->add_edit_meeting_minute($data);
 
-    if ($ret) {
+    if ($ret['success']) {
         $msg = "Meeting minute has been " . ($edit ? 'updated.' : 'saved.');
         add_notification($msg);
         $activityType = $edit ? 'update' : 'create';

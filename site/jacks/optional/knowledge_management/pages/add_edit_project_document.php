@@ -33,7 +33,7 @@ if ($_POST) {
 
     $ret = $this->add_edit_project_document($data);
 
-    if ($ret) {
+    if ($ret['success']) {
         $msg = "Project documents has been " . ($edit ? 'updated.' : 'saved.');
         add_notification($msg);
         $activityType = $edit ? 'update' : 'create';
