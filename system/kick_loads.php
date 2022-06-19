@@ -2,13 +2,6 @@
 session_start();
 mb_internal_encoding("UTF-8");
 
-
-                error_reporting(E_ALL);
-        ini_set('display_errors', TRUE);
-        ini_set('display_startup_errors', TRUE);
-        
-        
-
 function pre($content,$exit=true,$varDump=false){
     echo '<div style="padding:20px; border:1px solid #f00"><pre>';
     $varDump ? var_dump($content) : print_r($content);
