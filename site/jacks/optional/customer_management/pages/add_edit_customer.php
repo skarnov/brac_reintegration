@@ -1702,7 +1702,7 @@ ob_start();
                             <legend class="scheduler-border">Did the following happen to you when you in transit or during your stay in the country abroad? </legend>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label>False promises about a job prior to arrival at workplace abroad</label>
+                                    <label>False promises about a job prior to arrival at workplace abroad (মৌখিক বা লিখিত চুক্তি অনুযায়ী বিদেশে যে কাজ করার জন্য গিয়েছিলেন সেই কাজ পেয়েছিলেন কিনা)?</label>
                                     <div class="form_element_holder radio_holder radio_holder_static_featured_show_link">
                                         <div class="options_holder radio">
                                             <label><input class="px" type="radio" name="is_cheated" value="yes" <?php echo $pre_data && $pre_data['is_cheated'] == 'yes' ? 'checked' : '' ?>><span class="lbl">Yes</span></label>
@@ -1711,7 +1711,7 @@ ob_start();
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label>Forced to perform work or other activities against your will, after the departure from Bangladesh?</label>
+                                    <label>Forced to perform work or other activities against your will, after the departure from Bangladesh (নিয়োগকর্তা বা তার প্রতিনিধি দ্বারা আপনার ইচ্ছার বিরুদ্ধে কাজ করতে বাধ্য হয়েছেন কিনা)?</label>
                                     <div class="form_element_holder radio_holder radio_holder_static_featured_show_link">
                                         <div class="options_holder radio">
                                             <label><input class="px" type="radio" name="forced_work" value="yes" <?php echo $pre_data && $pre_data['forced_work'] == 'yes' ? 'checked' : '' ?>><span class="lbl">Yes</span></label>
@@ -1720,7 +1720,7 @@ ob_start();
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label>Experienced excessive working hours (more than 40 hours a week)</label>
+                                    <label>Experienced excessive working hours (more than 40 hours a week) (নির্দিষ্ট সময়ের চেয়ে বেশি কর্মঘন্টা (সপ্তাহে ৪০ ঘন্টার বেশি) কাজ করানো হয়েছে কিনা)?</label>
                                     <div class="form_element_holder radio_holder radio_holder_static_featured_show_link">
                                         <div class="options_holder radio">
                                             <label><input class="px" type="radio" name="excessive_work" value="yes" <?php echo $pre_data && $pre_data['excessive_work'] == 'yes' ? 'checked' : '' ?>><span class="lbl">Yes</span></label>
@@ -1731,7 +1731,7 @@ ob_start();
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label>Deductions from salary for recruitment fees at workplace</label>
+                                    <label>Deductions from salary for recruitment fees at workplace (নিয়োগ ফি/ খরচ হিসেবে বেতন থেকে টাকা কেটে রাখা হয়েছে কিনা)?</label>
                                     <div class="form_element_holder radio_holder radio_holder_static_featured_show_link">
                                         <div class="options_holder radio">
                                             <label><input class="px" type="radio" name="is_money_deducted" value="yes" <?php echo $pre_data && $pre_data['is_money_deducted'] == 'yes' ? 'checked' : '' ?>><span class="lbl">Yes</span></label>
@@ -1740,7 +1740,7 @@ ob_start();
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label>Denied freedom of movement during or between work shifts after your departure from Bangladesh?</label>
+                                    <label>Denied freedom of movement during or between work shifts after your departure from Bangladesh (চলাচলের ক্ষেত্রে সীমাবদ্ধতা (শুধুমাত্র বাসস্থান থেকে কর্মস্থল পর্যন্ত) ছিল কিনা)?</label>
                                     <div class="form_element_holder radio_holder radio_holder_static_featured_show_link">
                                         <div class="options_holder radio">
                                             <label><input class="px" type="radio" name="is_movement_limitation" value="yes" <?php echo $pre_data && $pre_data['is_movement_limitation'] == 'yes' ? 'checked' : '' ?>><span class="lbl">Yes</span></label>
@@ -1749,7 +1749,7 @@ ob_start();
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label>Threatened by employer or someone acting on their behalf, or the broker with violence or action by law enforcement/deportation?</label>
+                                    <label>Threatened by employer or someone acting on their behalf, or the broker with violence or action by law enforcement/deportation (পর্যাপ্ত নথিপত্র এর অভাবে অথবা অন্য কোন কারনে বিদেশে (ক্যাম্প, জেল) আটকে থাকার পর দেশে ফেরত এসেছেন কিনা)?</label>
                                     <div class="form_element_holder radio_holder radio_holder_static_featured_show_link">
                                         <div class="options_holder radio">
                                             <label><input class="px" type="radio" name="employer_threatened" value="yes" <?php echo $pre_data && $pre_data['employer_threatened'] == 'yes' ? 'checked' : '' ?>><span class="lbl">Yes</span></label>
@@ -1759,7 +1759,7 @@ ob_start();
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label>Have you ever had identity or travel documents (passport) withheld by an employer or broker after your departure from Bangladesh?</label>
+                                <label>Have you ever had identity or travel documents (passport) withheld by an employer or broker after your departure from Bangladesh (দেশ ছেড়ে যাওয়ার পর মালিক বা দালাল কর্তৃক ভ্রমনের জন্য প্রয়োজনীয় কাগজপত্র (পাসপোর্ট) আটকে রেখেছিলেন কিনা)?</label>
                                 <div class="form_element_holder radio_holder radio_holder_static_featured_show_link">
                                     <div class="options_holder radio">
                                         <label><input class="px" type="radio" name="is_kept_document" value="yes" <?php echo $pre_data && $pre_data['is_kept_document'] == 'yes' ? 'checked' : '' ?>><span class="lbl">Yes</span></label>
